@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>段ボールの中身リスト</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .box-item {
+            background-color: #e8f5e9;
+            border: 1px solid #dcdcdc;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .box-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .box-id {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 5px;
+        }
+        .box-contents ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        .box-contents li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .date-added {
+            font-size: 0.9em;
+            color: #666;
+            text-align: right;
+            margin-top: 10px;
+        }
+        /* スマートフォンでの見やすさ調整 */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .box-id {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 段ボール中身リスト 📦</h1>
+
+        <div class="box-item">
+            <div class="box-id">段ボールID: BOX001</div>
+            <div class="box-contents">
+                <ul>
+                    <li>漫画 xxx (1巻-10巻)</li>
+                    <li>ゲームソフト PS5版 △△△</li>
+                    <li>フィギュア (宇宙飛行士のやつ)</li>
+                </ul>
+            </div>
+            <div class="date-added">登録日: 2025年7月4日</div>
+        </div>
+
+        <div class="box-item">
+            <div class="box-id">段ボールID: BOX002</div>
+            <div class="box-contents">
+                <ul>
+                    <li>懐かしいラジコン部品一式</li>
+                    <li>はんだごてセット</li>
+                    <li>電子部品ストック (抵抗、コンデンサなど)</li>
+                    <li>SF小説コレクション (ハードカバー)</li>
+                </ul>
+            </div>
+            <div class="date-added">登録日: 2025年7月4日</div>
+        </div>
+
+        <div class="box-item">
+            <div class="box-id">段ボールID: BOX003</div>
+            <div class="box-contents">
+                <ul>
+                    <li>アルバム (小学校の卒業アルバムなど)</li>
+                    <li>古い手紙</li>
+                    <li>記念品 (修学旅行のお土産)</li>
+                </ul>
+            </div>
+            <div class="date-added">登録日: 2025年6月20日</div>
+        </div>
+
+        </div>
+</body>
+</html>
