@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📦 段ボール中身リスト トップページ 📦</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center; /* センター寄せ */
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .box-link-list {
+            list-style-type: none; /* リストの点マークを消す */
+            padding: 0;
+        }
+        .box-link-list li {
+            margin-bottom: 15px;
+        }
+        .box-link-list a {
+            display: block; /* リンク全体をボタンのようにする */
+            background-color: #27ae60;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .box-link-list a:hover {
+            background-color: #229954;
+            transform: translateY(-3px);
+        }
+        /* スマートフォンでの見やすさ調整 */
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 段ボール一覧 📦</h1>
+        <p>見たい段ボールのIDをクリックしてくれな！</p>
+        <ul class="box-link-list">
+            <li><a href="box_001.html">段ボールID: BOX001</a></li>
+            <li><a href="box_002.html">段ボールID: BOX002</a></li>
+            <li><a href="box_003.html">段ボールID: BOX003</a></li>
+            </ul>
+    </div>
+</body>
+</html>
